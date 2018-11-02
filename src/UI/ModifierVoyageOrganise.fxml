@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Workshop.ui.ModifierVoyageOrganiseController">
+   <children>
+      <TextField fx:id="nomagencem" layoutX="401.0" layoutY="277.0" />
+      <TextField fx:id="idagencem" layoutX="401.0" layoutY="221.0" />
+      <TextField fx:id="hotaelm" layoutX="401.0" layoutY="174.0" />
+      <TextField fx:id="nbplacesm" layoutX="401.0" layoutY="125.0" />
+      <TextField fx:id="villedestinationm" layoutX="401.0" layoutY="75.0" />
+      <TextField fx:id="paysdestinationm" layoutX="121.0" layoutY="277.0" />
+      <TextField fx:id="originem" layoutX="121.0" layoutY="221.0" />
+      <TextField fx:id="prixvoyagem" layoutX="121.0" layoutY="75.0" />
+      <DatePicker fx:id="dateretourm" layoutX="121.0" layoutY="174.0" />
+      <DatePicker fx:id="datedepartm" layoutX="121.0" layoutY="125.0" />
+      <Button fx:id="vide" layoutX="265.0" layoutY="330.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="80.0" text="Vide" />
+      <Button fx:id="modifier" layoutX="374.0" layoutY="330.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="80.0" text="Modifier" />
+      <Label layoutX="302.0" layoutY="129.0" text="Nb Places:" />
+      <Button fx:id="annuler" layoutX="150.0" layoutY="330.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="80.0" text="Annuler" />
+      <Label layoutX="301.0" layoutY="225.0" text="Id Agence:" />
+      <Label layoutX="306.0" layoutY="178.0" text="Hotel:" />
+      <Label layoutX="300.0" layoutY="79.0" text="Ville Destination:" />
+      <Label layoutX="28.0" layoutY="281.0" text="Pays Destination:" />
+      <Label layoutX="28.0" layoutY="225.0" text="Origine:" />
+      <Label layoutX="28.0" layoutY="178.0" text="Date Retour:" />
+      <Label layoutX="28.0" layoutY="129.0" text="Date Depart:" />
+      <Label layoutX="28.0" layoutY="79.0" text="Prix Voyage:" />
+      <Label layoutX="302.0" layoutY="281.0" text="Nom Agence:" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.AjouterVoyageOrganiseController">
+   <children>
+      <TextField fx:id="tf_origine" layoutX="116.0" layoutY="220.0" />
+      <Label layoutX="26.0" layoutY="224.0" text="Origine:" />
+      <Button fx:id="btn_ajout" layoutX="267.0" layoutY="333.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Ajouter" />
+      <DatePicker fx:id="tf_datedepart" layoutX="117.0" layoutY="125.0" />
+      <DatePicker fx:id="tf_dateretour" layoutX="117.0" layoutY="174.0" />
+      <TextField fx:id="tf_paysdestination" layoutX="117.0" layoutY="261.0" />
+      <TextField fx:id="tf_villedestination" layoutX="417.0" layoutY="76.0" />
+      <TextField fx:id="tf_hotel" layoutX="417.0" layoutY="174.0" />
+      <TextField fx:id="tf_nomagence" layoutX="417.0" layoutY="220.0" />
+      <Label layoutX="26.0" layoutY="80.0" text="Prix Voyage:" />
+      <Label layoutX="26.0" layoutY="129.0" text="Date Depart:" />
+      <Label layoutX="26.0" layoutY="178.0" text="Date Retour:" />
+      <Label layoutX="26.0" layoutY="265.0" text="Pays Destination:" />
+      <Label layoutX="320.0" layoutY="80.0" text="Ville Destination:" />
+      <Label layoutX="320.0" layoutY="129.0" text="Nb Places:" />
+      <Label layoutX="320.0" layoutY="178.0" text="Hotel:" />
+      <Label layoutX="320.0" layoutY="224.0" text="Nom Agence:" />
+      <Button fx:id="vide" layoutX="458.0" layoutY="261.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="65.0" text="Vide" />
+      <Spinner fx:id="tf_nbplaces" layoutX="417.0" layoutY="125.0" />
+      <Spinner fx:id="tf_prixvoyage" layoutX="117.0" layoutY="76.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="377.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.AfficherVolsFXMLController">
+   <children>
+      <TableView fx:id="tableVolss" prefHeight="282.0" prefWidth="766.0">
+        <columns>
+          <TableColumn fx:id="columnDebutvol" prefWidth="111.0" text="Debut des vols" />
+          <TableColumn fx:id="columnFinVol" prefWidth="115.0" text="Fin vols" />
+            <TableColumn fx:id="columnVilleDepart" prefWidth="77.99995422363281" text="Ville Depart" />
+            <TableColumn fx:id="columnVilleArrive" prefWidth="98.66668701171875" text="Ville d'arrivé" />
+            <TableColumn fx:id="columnPrix" prefWidth="50.6666259765625" text="prix" />
+            <TableColumn fx:id="columnDescription" prefWidth="80.66671752929688" text="Description" />
+            <TableColumn fx:id="columTypeVol" prefWidth="81.99993896484375" text="Type Vol" />
+            <TableColumn fx:id="placedisp" prefWidth="84.0" text="Places" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_supprimerVol" layoutX="28.0" layoutY="330.0" mnemonicParsing="false" onAction="#Supprimer_vols" prefHeight="41.0" prefWidth="131.0" style="-fx-background-color: #bf0202;" text="Supprimer Vol" textFill="WHITE" />
+      <Button fx:id="btn_modifierVol" layoutX="489.0" layoutY="330.0" mnemonicParsing="false" onAction="#ModifierVols" prefHeight="41.0" prefWidth="131.0" style="-fx-background-color: #19c55e;" text="Modifier Vol" textFill="WHITE" />
+   </children>
+</AnchorPane>

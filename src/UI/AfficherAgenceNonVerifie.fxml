@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.AfficherAgenceNonVerifieController">
+   <children>
+      <TableView fx:id="tableau" layoutX="74.0" layoutY="61.0" prefHeight="263.0" prefWidth="454.0">
+        <columns>
+          <TableColumn fx:id="col_nom" prefWidth="221.60003662109375" text="Nom" />
+          <TableColumn fx:id="col_mail" prefWidth="231.199951171875" text="E-mail" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_accept" layoutX="274.0" layoutY="341.0" mnemonicParsing="false" onAction="#Accept" text="Accepter" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: FFCC2E;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.ReservationhebergementController">
+   <children>
+      <TableView fx:id="tab" layoutX="10.0" layoutY="56.0" prefHeight="346.0" prefWidth="1182.0" style="-fx-background-color: #E9B000 #E9B000; -fx-background-radius: 5;">
+         <columns>
+            <TableColumn fx:id="image" prefWidth="119.20000839233398" text="image" />
+            <TableColumn fx:id="nomAgence" prefWidth="78.40005493164062" text="Nom agence" />
+            <TableColumn fx:id="type_Hebergement" prefWidth="80.80000305175781" text="Type" />
+            <TableColumn fx:id="nom_Hebergement" prefWidth="95.20001220703125" text="Nom" />
+            <TableColumn fx:id="nombre_etoile" prefWidth="31.20001220703125" text="*****" />
+            <TableColumn fx:id="Adresse_Heb" prefWidth="107.199951171875" text="Adresse" />
+            <TableColumn fx:id="nombre_chambre" prefWidth="57.60003662109375" text="nbre " />
+            <TableColumn fx:id="prix_single" prefWidth="70.4000244140625" text="Prix single" />
+            <TableColumn fx:id="prix_double" prefWidth="70.39996337890625" text="Prix_double" />
+            <TableColumn fx:id="taux_demi" prefWidth="62.39996337890625" text="Taux demi" />
+            <TableColumn fx:id="taux_complet" prefWidth="60.0" text="taux complet" />
+            <TableColumn fx:id="tel" prefWidth="127.199951171875" text="tel" />
+            <TableColumn fx:id="description" prefWidth="173.60015869140625" text="description" />
+         </columns>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </TableView>
+      <Label layoutX="84.0" layoutY="19.0" text="Destination" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="reserver" layoutX="827.0" layoutY="424.0" mnemonicParsing="false" onAction="#reserver" prefHeight="45.0" prefWidth="135.0" style="-fx-background-color: #1E776C;" text="Réserver" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="393.0" layoutY="14.0" mnemonicParsing="false" onAction="#rechercher" style="-fx-background-color: #008F95;" text="Rechercher" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="rechercherdestination" layoutX="184.0" layoutY="16.0" />
+      <TextField fx:id="nbrs" layoutX="199.0" layoutY="425.0" />
+      <Label layoutX="14.0" layoutY="429.0" prefHeight="17.0" prefWidth="163.0" text="Nombre de chambres single:" underline="true" />
+      <TextField fx:id="nbrn" layoutX="575.0" layoutY="425.0" />
+      <Label layoutX="348.0" layoutY="387.0" prefHeight="17.0" prefWidth="111.0" />
+      <Label layoutX="9.0" layoutY="475.0" prefHeight="18.0" prefWidth="173.0" text="Nombre de chambres doubles:" underline="true" />
+      <TextField fx:id="nbrd" layoutX="199.0" layoutY="472.0" />
+      <Label layoutX="446.0" layoutY="429.0" prefHeight="17.0" prefWidth="94.0" text="Nombre de nuit:" underline="true" />
+      <Label layoutX="446.0" layoutY="476.0" prefHeight="17.0" prefWidth="94.0" text="Type de pension:" underline="true" />
+      <TextField fx:id="prixx" layoutX="405.0" layoutY="533.0" />
+      <Label layoutX="339.0" layoutY="536.0" prefHeight="18.0" prefWidth="43.0" text="Prix:" underline="true" />
+      <RadioButton fx:id="demip" layoutX="688.0" layoutY="475.0" mnemonicParsing="false" text="Demi" />
+      <RadioButton fx:id="completep" layoutX="582.0" layoutY="476.0" mnemonicParsing="false" text="Complete" />
+   </children>
+</AnchorPane>

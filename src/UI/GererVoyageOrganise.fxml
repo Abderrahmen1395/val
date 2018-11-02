@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.GererVoyageOrganiseController">
+   <children>
+      <TableView fx:id="voyageorganise" layoutY="1.0" prefHeight="315.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="42.66665780544281" text="Id" />
+          <TableColumn fx:id="prixvoyage" prefWidth="107.99997329711914" text="Prix Voyage" />
+            <TableColumn fx:id="datedepart" prefWidth="75.0" text="Date Depart" />
+            <TableColumn fx:id="dateretour" prefWidth="75.0" text="Date Retour" />
+            <TableColumn fx:id="origine" prefWidth="75.0" text="Origine" />
+            <TableColumn fx:id="paysdestination" prefWidth="75.0" text="Pays Destination" />
+            <TableColumn fx:id="villedestination" prefWidth="75.0" text="Ville Destination" />
+            <TableColumn fx:id="nbplaces" prefWidth="75.0" text="NB Places" />
+            <TableColumn fx:id="hotel" prefWidth="75.0" text="Hotel" />
+            <TableColumn fx:id="idagence" prefWidth="75.0" text="ID Agence" />
+            <TableColumn fx:id="nomagence" prefWidth="75.0" text="Nom Agence" />
+        </columns>
+      </TableView>
+      <Button fx:id="supprimer" layoutX="139.0" layoutY="331.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="88.0" text="Supprimer" />
+      <Button fx:id="modifier" layoutX="332.0" layoutY="331.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="88.0" text="Modifier" />
+   </children>
+</AnchorPane>

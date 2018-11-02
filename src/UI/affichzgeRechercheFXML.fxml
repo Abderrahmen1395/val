@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.AffichzgeRechercheFXMLController">
+   <children>
+      <TableView fx:id="tabrecherche" layoutX="23.0" layoutY="150.0" prefHeight="200.0" prefWidth="640.0">
+        <columns>
+          <TableColumn fx:id="dv" prefWidth="75.0" text="debut vol" />
+          <TableColumn fx:id="fv" prefWidth="75.0" text="fin vol" />
+            <TableColumn fx:id="de" prefWidth="75.0" text="ville depart" />
+            <TableColumn fx:id="ar" prefWidth="75.0" text="ville arrivée" />
+            <TableColumn fx:id="p" prefWidth="75.0" text="prix" />
+            <TableColumn fx:id="des" prefWidth="75.0" text="description" />
+            <TableColumn fx:id="type" prefWidth="75.0" text="type vol" />
+            <TableColumn fx:id="placedisponible" prefWidth="75.0" text="Places" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_find" layoutX="593.0" layoutY="14.0" mnemonicParsing="false" onAction="#find" prefHeight="38.0" prefWidth="137.0" text="Rechercher" />
+      <Label layoutX="31.0" layoutY="14.0" prefHeight="25.0" prefWidth="40.0" text="De :" />
+      <Label layoutX="300.0" layoutY="14.0" prefHeight="25.0" prefWidth="40.0" text="A :" />
+      <TextField fx:id="txt_dd" layoutX="63.0" layoutY="26.0" />
+      <TextField fx:id="txt_aa" layoutX="331.0" layoutY="20.0" />
+      <Button fx:id="btn_sshow" layoutX="71.0" layoutY="499.0" mnemonicParsing="false" onAction="#sshow" prefHeight="38.0" prefWidth="161.0" text="Afficher tous les voln" />
+      <Button fx:id="reserver" layoutX="317.0" layoutY="506.0" mnemonicParsing="false" onAction="#reserver" text="Reserver" />
+      <TextField fx:id="nbradulte" layoutX="152.0" layoutY="377.0" />
+      <TextField fx:id="nbrenfant" layoutX="447.0" layoutY="377.0" />
+      <TextField fx:id="prixx" layoutX="304.0" layoutY="433.0" />
+      <Label layoutX="37.0" layoutY="381.0" prefHeight="17.0" prefWidth="105.0" text="Nombre adulte:" />
+      <Label layoutX="317.0" layoutY="381.0" text="Nombre enfant:(-20%)" />
+      <Label layoutX="218.0" layoutY="437.0" prefHeight="17.0" prefWidth="61.0" text="Prix:" />
+   </children>
+</AnchorPane>

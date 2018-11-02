@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.ModifierActiviteFXMLController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="52.0" layoutY="59.0" text="Nom" />
+            <Label layoutX="52.0" layoutY="97.0" text="Type" />
+            <Label layoutX="52.0" layoutY="140.0" text="Adresse" />
+            <Label layoutX="52.0" layoutY="183.0" text="Pays" />
+            <Label layoutX="52.0" layoutY="228.0" text="Region" />
+            <Label layoutX="52.0" layoutY="276.0" text="Description" />
+            <Label layoutX="52.0" layoutY="328.0" text="Prix" />
+            <Button fx:id="btn_modifieractivite" layoutX="426.0" layoutY="281.0" mnemonicParsing="false" onAction="#zzzz" text="Modifier" />
+            <Label layoutX="248.0" layoutY="14.0" text="Modifier une activite" />
+            <TextField fx:id="tf_nomactivite" layoutX="151.0" layoutY="55.0" />
+            <TextField fx:id="tf_typeactivite" layoutX="151.0" layoutY="93.0" />
+            <TextField fx:id="tf_adresseactivite" layoutX="151.0" layoutY="136.0" />
+            <TextField fx:id="tf_paysactivite" layoutX="151.0" layoutY="179.0" />
+            <TextField fx:id="tf_regionactivite" layoutX="151.0" layoutY="224.0" />
+            <TextField fx:id="tf_descriptionactivite" layoutX="151.0" layoutY="272.0" />
+            <TextField fx:id="tf_prixactivite" layoutX="151.0" layoutY="324.0" />
+            <Label layoutX="317.0" layoutY="59.0" prefHeight="17.0" prefWidth="98.0" text="Nombe de Places:" />
+            <TextField fx:id="disp" layoutX="413.0" layoutY="55.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
